@@ -1,0 +1,61 @@
+<html>
+<head>
+  <title>One Quote a Day | 4</title>
+  <style>
+    body {
+      font-family: 'Viga', sans-serif;
+      background-color: #ECE7E1;
+      background-image: url('assets/img/upfeathers.png') ; 
+    }
+    blockquote {
+      padding: 2em 1em 1.5em 1em;
+      font-size: 2em;
+      width: 10em;
+      right: 0;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      display: block;
+      margin: 0;
+      border-left: 0.5em solid #141F47;
+      color: #141F47;
+      background: #D41E40;
+      quotes: "\201C""\201D""\2018""\2019";
+    }
+    blockquote:before {
+      color: #ACDDD8;
+      content: open-quote;
+      font-size: 4em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+    }
+    blockquote cite {
+      text-align: right;
+      display: block;
+      font-size: 1em;
+      margin: 1em 0 0 0;
+      color: #ACDDD8;
+    }
+  </style>
+</head>
+<body>
+		<blockquote>"We have to continually be jumping off cliffs and developing our wings on the way down."
+  <cite>- Kurt Vonnegut</cite>
+</blockquote>
+
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Viga::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+</body>
+</html>

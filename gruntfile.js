@@ -154,7 +154,7 @@ module.exports = function ( grunt ) {
     htmlbuild: {
         dist: {
             src: 'index.html',
-            dest: 'pages/',
+            dest: '',
             options: {
                 beautify: true,
                 //prefix: '//some-cdn',
@@ -174,8 +174,8 @@ module.exports = function ( grunt ) {
                     test: '<%= fixturesPath %>/css/inline.css'
                 },
                 sections: {
-                    views: '<%= fixturesPath %>/pages/**/*.html',
-                    templates: '<%= fixturesPath %>/pages/**/*.html',
+                    views: '<%= fixturesPath %>/**/*.html',
+                    templates: '<%= fixturesPath %>/**/*.html',
                     layout: {
                         header: '<%= fixturesPath %>/layout/header.html',
                         footer: '<%= fixturesPath %>/layout/footer.html'
@@ -558,7 +558,7 @@ module.exports = function ( grunt ) {
       return file.replace( dirRE, '' );
     });
 
-    grunt.file.copy('src/index.html', this.data.dir + '/index.html', { 
+    grunt.file.copy('src/1.html', this.data.dir + '/1.html', { 
       process: function ( contents, path ) {
         return grunt.template.process( contents, {
           data: {
@@ -569,62 +569,7 @@ module.exports = function ( grunt ) {
         });
       }
     });
-    grunt.file.copy('src/ans.html', this.data.dir + '/ans.html', { 
-      process: function ( contents, path ) {
-        return grunt.template.process( contents, {
-          data: {
-            scripts: jsFiles,
-            styles: cssFiles,
-            version: grunt.config( 'pkg.version' )
-          }
-        });
-      }
-    });
-    grunt.file.copy('src/jauntly.html', this.data.dir + '/jauntly.html', { 
-      process: function ( contents, path ) {
-        return grunt.template.process( contents, {
-          data: {
-            scripts: jsFiles,
-            styles: cssFiles,
-            version: grunt.config( 'pkg.version' )
-          }
-        });
-      }
-    });
-    grunt.file.copy('src/swiftkick.html', this.data.dir + '/swiftkick.html', { 
-      process: function ( contents, path ) {
-        return grunt.template.process( contents, {
-          data: {
-            scripts: jsFiles,
-            styles: cssFiles,
-            version: grunt.config( 'pkg.version' )
-          }
-        });
-      }
-    });
-    grunt.file.copy('src/treadhub.html', this.data.dir + '/treadhub.html', { 
-      process: function ( contents, path ) {
-        return grunt.template.process( contents, {
-          data: {
-            scripts: jsFiles,
-            styles: cssFiles,
-            version: grunt.config( 'pkg.version' )
-          }
-        });
-      }
-    });
-    grunt.file.copy('src/eugixd.html', this.data.dir + '/eugixd.html', { 
-      process: function ( contents, path ) {
-        return grunt.template.process( contents, {
-          data: {
-            scripts: jsFiles,
-            styles: cssFiles,
-            version: grunt.config( 'pkg.version' )
-          }
-        });
-      }
-    });
-    grunt.file.copy('src/twentyideas.html', this.data.dir + '/twentyideas.html', { 
+    grunt.file.copy('src/2.html', this.data.dir + '/2.html', { 
       process: function ( contents, path ) {
         return grunt.template.process( contents, {
           data: {
