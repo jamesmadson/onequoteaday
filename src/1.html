@@ -3,30 +3,45 @@
   <title>One Quote a Day | 1</title>
   <style>
     body {
-      font-family: "Roboto Slab", sans-serif;
-      background-color: #eaf4e3;
-      color: #9d8500;
+      font-family: 'Permanent Marker', cursive;
+      background-color: #999999;
+      background-image: url("assets/img/scotland-sunset.jpg");
+      background-size: 100%;
+      background-position: center right;
+      color: #ffffff;
+      margin: 0;
+      padding: 20px;
+      border: 30px solid #fff;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.assets/img/scotland-sunset.jpg', sizingMethod='scale');
+      -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/img/scotland-sunset.jpg', sizingMethod='scale')";
     }
     blockquote {
       font-size: 6em;
+      width: 70%;
+      
     }
     blockquote cite {
       display: block;
       font-size: 0.5em;
+      margin: 1em 0 0 0;
       opacity: 0.5;
     }
   </style>
 </head>
 <body>
   <div class="container">
-	  <blockquote>
+	  <blockquote id="responsive_quote">
 		  "Dare to live the life you dreamed for yourself. Go forward and make your dreams come true." 
 		  <cite>- Ralph Waldo Emerson</cite>
 	  </blockquote>
 </div>
 <script type="text/javascript">
   WebFontConfig = {
-    google: { families: [ 'Roboto+Slab:400,700:latin' ] }
+    google: { families: [ 'Permanent+Marker::latin' ] }
   };
   (function() {
     var wf = document.createElement('script');
@@ -37,6 +52,10 @@
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(wf, s);
   })(); </script>
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="../bower_components/FitText.js/jquery.fittext.js"></script>
+  <script>
+    jQuery("#responsive_quote").fitText(1.2, { minFontSize: '30px', maxFontSize: '100px' });
+  </script>
 </body>
 </html>

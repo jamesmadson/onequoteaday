@@ -40,11 +40,12 @@
   </style>
 </head>
 <body>
-		<blockquote>"We have to continually be jumping off cliffs and developing our wings on the way down."
+	<blockquote id="responsive_quote">
+    "We have to continually be jumping off cliffs and developing our wings on the way down."
   <cite>- Kurt Vonnegut</cite>
-</blockquote>
+  </blockquote>
 
-<script type="text/javascript">
+  <script type="text/javascript">
   WebFontConfig = {
     google: { families: [ 'Viga::latin' ] }
   };
@@ -57,5 +58,10 @@
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(wf, s);
   })(); </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="../bower_components/FitText.js/jquery.fittext.js"></script>
+  <script>
+    jQuery("#responsive_quote").fitText();
+  </script>
 </body>
 </html>

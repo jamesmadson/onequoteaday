@@ -4,31 +4,48 @@
   <style>
     body {
       font-family: 'Source Sans Pro', sans-serif;
-      background-color: #000000;
-      color: #FFFFFF;
-      background-image: url('assets/svg/map.svg');
-      background-position: center;
+      background: url('assets/img/broken-top.jpg') no-repeat #000000;
+      background-position: top;
       background-size: 100%;
+      color: #FFFFFF;
+      margin: 0;
     }
-    .container {
-      overflow: hidden;
+    .map {
       display: block;
-    }
-    blockquote {
-      font-size: 6em;
-      text-transform: uppercase;
+      height: 100%;
+      background: url('assets/svg/map.svg');
+      background-position: center;
+      background-size: 400%;
+      opacity: 0.3;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
     }
 
-    blockquote cite {
+    blockquote {
+      font-size: 3em;
+      width: 80%;
+      margin: 0 auto;
       display: block;
+      text-transform: uppercase;
+      padding-top:1em;
+      position: relative;
+      z-index: 5;
+    }
+    blockquote cite{
+      margin-top: 1em;
       font-size: 0.5em;
-      opacity: 0.5;
+      display: block;
     }
   </style>
 </head>
 <body>
+<div class="map">
+</div>
   <div class="container">
-    <blockquote>
+    <blockquote id="responsive_quote">
       "Maps encourage boldness. They're like cryptic love letters they make anything seem possible." 
       <cite>- Mark Jenkins</cite>
     </blockquote>
@@ -46,5 +63,10 @@
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(wf, s);
   })(); </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="../bower_components/FitText.js/jquery.fittext.js"></script>
+  <script>
+    jQuery("#responsive_quote").fitText(1.2, { minFontSize: '3em', maxFontSize: '100px' });
+  </script>
 </body>
 </html>
