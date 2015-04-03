@@ -1,0 +1,143 @@
+<html>
+<head>
+  <title>One Quote a Day | 6</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1em;
+      padding: 2em 0 0 0;
+      margin: 0;
+      border: 2em rgba(255,255,255,0.1) solid;
+      background-color: #E87344;
+    }
+    blockquote {
+      color: #282829;
+      display: block;
+      overflow: hidden;
+      text-align: center;
+    }
+    blockquote cite {
+      display: block;
+      font-size: 3.5em;
+      font-weight: 900;
+      padding: 1em 0 2em 0;
+      margin: 1em 0 0 0;
+      color: rgba(255,255,255,0.8);
+      text-transform: capitalize;
+      font-weight: 100;
+    }
+    blockquote cite a,
+    blockquote cite a:active,
+    blockquote cite a:visited {
+      color: rgba(0,0,0,0.2);
+      font-size: 0.5em;
+      display: block;
+      padding: 1em 0;
+      font-weight: 100;
+      text-decoration: none;
+    }
+
+    .line_one {
+      color: rgba(255,255,255,0.8);
+      font-weight: 900;
+    }
+    .line_two {
+      color: rgba(255,255,255,0.15);
+      padding: 0.5em 0;
+      font-weight: 900;
+    }
+    .line_three {
+      color: rgba(255,255,255,0.25);
+      font-style: italic;
+      padding: 0 0 0.5em 0;
+    }
+    .line_four {
+      color: rgba(255,255,255,0.5);
+      font-weight: 900;
+    }
+    .line_five {
+      color: rgba(255,255,255,0.25);
+      font-weight: 400;
+      padding: 0.5em 0 0 0;
+    }
+    .line_five strong {
+      color: rgba(255,255,255,0.8);
+      font-style: italic;
+      letter-spacing: 0.12em;
+    }
+    .line_six {
+      color: rgba(255,255,255,0.2);
+      padding: 0.5em 0 0 0;
+      font-style: italic;
+    }
+    .line_seven {
+      color: rgba(255,255,255,0.8);
+      padding: 0.2em 0 1em 0;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    /* Glyph, by Harry Roberts */
+
+    hr {
+        padding: 0;
+        border: none;
+        border-top: 5px double rgba(0,0,0,0.1);
+        color: rgba(0,0,0,0.2);
+        text-align: center;
+        width: 60%;
+    }
+    hr:after {
+        content: "§";
+        display: inline-block;
+        position: relative;
+        top: -0.7em;
+        font-size: 3em;
+        padding: 0 0.5em;
+        background: #E87344;
+    }
+  </style>
+  <link rel="stylesheet" href="assets/css/animate.css" />
+</head>
+<body>
+	<blockquote>
+    <div id="responsive_quote_one" class="line_one animated fadeInDown">I&rsquo;m not sure what I&rsquo;ll do,</div>
+    <div id="responsive_quote_two" class="line_two animated fadeInUp">but&ndash;well,</div>
+    <div id="responsive_quote_three" class="line_three">I want to go places</div>
+    <div id="responsive_quote_four" class="line_four animated fadeInLeft">and see people.</div>
+    <div id="responsive_quote_five" class="line_five">I want my mind to <strong>grow.</strong></div>
+    <div id="responsive_quote_six" class="line_six">I want to live where things happen on a</div>
+    <div id="responsive_quote_seven" class="line_seven">big scale.</div>
+    <hr>
+    <cite>F. Scott Fitzgerald<br>
+      <a href="https://www.goodreads.com/book/show/2915975-the-ice-palace">The Ice Palace & Other Stories</a>
+    </cite>
+  </blockquote>
+
+  <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Libre+Baskerville:400,700,400italic:latin,latin-ext' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="../bower_components/FitText.js/jquery.fittext.js"></script>
+  <script>
+    jQuery("#responsive_quote_one").fitText(0.8, {});
+    jQuery("#responsive_quote_two").fitText(1.15, {});
+    jQuery("#responsive_quote_three").fitText(1.2, {});
+    jQuery("#responsive_quote_four").fitText(0.7, {});
+    jQuery("#responsive_quote_five").fitText(1.75, {});
+    jQuery("#responsive_quote_six").fitText(2.1, { minFontSize: '20px', maxFontSize: '200px' });
+    jQuery("#responsive_quote_seven").fitText(0.75, {});
+  </script>
+</body>
+</html>

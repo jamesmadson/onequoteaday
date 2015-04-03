@@ -1,0 +1,6 @@
+repository: # git@github.com:clearleft/example.git
+
+deploy:
+  branch: master
+  server: # example.clearleft.host
+  domain: # example.clearleft.com

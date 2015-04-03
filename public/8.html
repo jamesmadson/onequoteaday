@@ -1,0 +1,76 @@
+<html>
+<head>
+  <title>One Quote a Day | 8</title>
+  <style>
+    body {
+      font-family: 'IM Fell English', serif;
+      background-color: #FFFFFF;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+    blockquote {
+      font-size: 5em;
+      width: 70%;
+      display: block;
+      margin: 5em auto 0 auto;
+    }
+    cite {
+      font-size: 0.8em;
+      font-style: italic;
+      display: block;
+    }
+    .typed-cursor{
+      opacity: 1;
+      -webkit-animation: blink 0.7s infinite;
+      -moz-animation: blink 0.7s infinite;
+      animation: blink 0.7s infinite;
+    }
+    @keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-webkit-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+    @-moz-keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+    }
+  </style>
+</head>
+<body>
+	  <blockquote></blockquote>
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'IM+Fell+English:400,400italic:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="assets/js/typed.js"></script>
+  <script>
+    $(function(){
+        $("blockquote").typed({
+          strings: ["The sun shines not on us ^500 but in us. <cite>- ^500 John ^500 Muir</cite>"],
+          contentType: 'html',
+          typeSpeed: 0,
+          backDelay: 1000,
+          showCursor: true,
+          cursorChar: "|",
+        });
+    });
+  </script>
+</body>
+</html>

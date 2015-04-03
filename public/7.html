@@ -1,0 +1,96 @@
+<html>
+<head>
+  <title>One Quote a Day | 7</title>
+  <style>
+    body {
+      font-family: 'Abril Fatface', cursive;
+      font-size: 1em;
+      padding: 0;
+      margin: 0;
+      background-color: #FFFFFF;
+      color: #FFFFFF;
+    }
+    .container_top {
+      background-color: #EF1A6D;
+      background-image: url(http://www.transparenttextures.com/patterns/carbon-fibre-v2.png);
+      height: 30%;
+      padding: 7.5% 1em 0 1em;
+    }
+    .container_bottom {
+      background-color: #A2B944;
+      background-image: url(http://www.transparenttextures.com/patterns/concrete-wall.png);
+      height: 25%;
+      padding: 15% 1em 0 1em;
+    }
+    blockquote {
+      color: #FFFFFF;
+      display: block;
+      overflow: hidden;
+      text-align: center;
+      font-size: 5em;
+      letter-spacing: 0.05em;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    blockquote cite {
+      display: block;
+      font-size: 0.5em;
+      letter-spacing: 0;
+      padding: 1em 0 0 0;
+      margin: 1em 0 0 0;
+      color: #999999;
+      text-transform: capitalize;
+    }
+    blockquote cite a,
+    blockquote cite a:active,
+    blockquote cite a:visited {
+      color: #CCCCCC;
+      text-decoration: none;
+    }
+    blockquote cite a:hover {
+    }
+    .and {
+      display: block;
+      margin: -0.7em auto;
+      font-size: 2em;
+      text-transform: uppercase;
+      width: 40%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+	<blockquote id="responsive_quote">
+    <div class="container_top">
+    Be fanatically positive
+    </div>
+    <div class="and">&</div>
+    <div class="container_bottom">
+      <span>militantly optimistic.</span>
+    </div>
+    <cite>&#8212; Rick Steves<br>
+      <a href="https://www.goodreads.com/book/show/6419542-travel-as-a-political-act">Travel as a Political Act</a>
+    </cite>
+  </blockquote>
+
+  <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Abril+Fatface::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="../bower_components/FitText.js/jquery.fittext.js"></script>
+  <script>
+    jQuery("#responsive_quote").fitText(1.2, { minFontSize: '48px', maxFontSize: '100px' });
+  </script>
+</body>
+</html>
