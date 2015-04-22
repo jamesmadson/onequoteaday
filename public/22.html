@@ -1,0 +1,80 @@
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+    <title>One Quote a Day | 22</title>
+  <style>
+    html, body {
+      height: 100%;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      margin: 0;
+      background: #F9F9F9;
+      overflow: none;
+    }
+    blockquote {
+      font-size: 4vw;
+      width: 70vw;
+      text-align: center;
+      margin: 0 auto 2em auto;
+      padding: 0em 0;
+      color: #000000;
+      position: relative;
+      top: 50%;
+      text-transform: uppercase;
+      opacity: 1;
+      display: block;
+      text-shadow: 0px 0px 2px #fff, 1px 1px 4px rgba(0,0,0,0.7);
+      transition: all 0.3s linear;
+      animation: sharpen 0.9s linear backwards;
+    }
+    .cite {
+      font-size: 3vw;
+      padding: 2vw 0;
+      font-weight: 400;
+      display: block;
+      text-align: center;
+      font-weight: normal;
+    }
+
+/* ...and so on for all the letters */
+
+@keyframes sharpen {
+ 0% {
+    opacity: 0;
+    text-shadow: 0px 0px 100px #fff;
+    color: transparent;
+ }
+ 90% {
+    opacity: 0.9;
+    text-shadow: 0px 0px 10px #fff;
+    color: transparent;
+ }
+ 100% {
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0px 0px 2px #fff, 1px 1px 4px rgba(0,0,0,0.7);
+ }
+}
+  </style>
+  <link href='http://fonts.googleapis.com/css?family=Arvo:700|Homemade+Apple' rel='stylesheet' type='text/css'>  </head>
+  <body>
+    <div id="letter-container" class="letter-container">
+        <h2>
+          <a href="#">The mountains are calling<br /> and I must go.</a>
+        </h2>
+      </div>
+      
+      <div class="cite">– John Muir</div>
+    </blockquote>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      <script type="text/javascript" src="../assets/js/vendor/lettering.js"></script>
+      <script type="text/javascript">
+        $(function() {
+          $("#blockquote").lettering();
+        });
+      </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+    <title>One Quote a Day | 19</title>
+  <style>
+    html, body {
+      height: 100%;
+    }
+    body {
+      font-family: 'Exo', sans-serif;
+      color: #181819;
+      background-color: #FFFFFF;
+      margin: 0;
+      overflow: hidden;
+    }
+    blockquote {
+      font-size: 5vw;
+      display: block;
+      color: #FFFFFF;
+      opacity: 0;
+      font-weight: 900;
+      position: absolute;
+      margin: 0 auto;
+      z-index: 5;
+      width: 80%;
+      top: 10vw;
+      left: 0;
+      right: 0;
+      text-align: center;
+      -webkit-animation: flickerAnimation 15s;
+      -moz-animation: flickerAnimation 15s;
+      -o-animation: flickerAnimation 15s;
+      animation: flickerAnimation 15s
+    }
+    cite {
+      display: block;
+      font-weight: 100;
+      margin: 6vw 0 0 0 ;
+      opacity: 0.5;
+    }
+    .video {
+      position: absolute;
+      left: -24.5%;
+      right: 0;
+      top: 0;
+      z-index: 0;
+      margin: 0 auto;
+    }
+    @keyframes flickerAnimation {
+      0%   { opacity:0; }
+      50%  { opacity:1; }
+      100% { opacity:0; }
+    }
+    @-o-keyframes flickerAnimation{
+      0%   { opacity:0; }
+      50%  { opacity:1; }
+      100% { opacity:0; }
+    }
+    @-moz-keyframes flickerAnimation{
+      0%   { opacity:0; }
+      50%  { opacity:1; }
+      100% { opacity:0; }
+    }
+    @-webkit-keyframes flickerAnimation{
+      0%   { opacity:0; }
+      50%  { opacity:1; }
+      100% { opacity:0; }
+    }
+  </style>
+  <link href='http://fonts.googleapis.com/css?family=Exo:300,800' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <blockquote class="">
+      Somewhere, something incredible is waiting to be known.
+      <cite>Carl Sagan</cite>
+    </blockquote>
+    <iframe class="video" width="150%" height="150%" src="https://www.youtube.com/embed/R7n71pm0K04?rel=0&amp;controls=0&amp;showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+  </body>
+</html>

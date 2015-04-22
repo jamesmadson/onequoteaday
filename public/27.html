@@ -1,0 +1,115 @@
+<html>
+<head>
+  <title>One Quote a Day | 27</title>
+  <style>
+    body {
+      font-family: Georgia, Times, serif;
+      padding: 10vw 10vw 1vw 10vw;
+      margin: 0;
+      color: #181819;
+      background-color: #6D7839;
+    }
+    blockquote {
+      font-size: 4vw;
+      line-height: 5vw;
+      text-align: center;
+      position: relative;
+      z-index: 5;
+    }
+    blockquote cite {
+      display: block;
+      font-size: 0.5em;
+      color: #181819;
+      text-transform: uppercase;
+      padding: 3vw 0 0 0;
+      font-style: normal;
+      font-weight: bold;
+      letter-spacing: 2vw;
+    }
+    strong {
+      color: #FFFFFF;
+    }
+    .number {
+      font-size: 4em;
+      border-radius: 50%;
+      width: 4em;
+      height: 4em;
+      text-align: center;
+      background: #181819;
+      color: #F9F9F9;
+      position: absolute;
+      top: 15vw;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      border: 10px solid rgba(0,0,0,0.1);
+      opacity: 0.3;
+      z-index: 0;
+    }
+    .number p {
+      position: relative;
+      top: 25%;
+      transform: translateY(-50%);
+    }
+    .star-five {
+       position: absolute;
+       top: 90px;
+       left: 30px;
+       display: block;
+       color: #C0392B;
+       width: 0px;
+       height: 0px;
+       border-right:  100px solid transparent;
+       border-bottom: 70px  solid #C0392B;
+       border-left:   100px solid transparent;
+       -moz-transform:    rotate(35deg);
+       -webkit-transform: rotate(35deg);
+       -ms-transform:     rotate(35deg);
+       -o-transform:      rotate(35deg);
+    }
+    .star-five:before {
+       border-bottom: 80px solid #C0392B;
+       border-left: 30px solid transparent;
+       border-right: 30px solid transparent;
+       position: absolute;
+       height: 0;
+       width: 0;
+       top: -45px;
+       left: -65px;
+       display: block;
+       content: '';
+       -webkit-transform: rotate(-35deg);
+       -moz-transform:    rotate(-35deg);
+       -ms-transform:     rotate(-35deg);
+       -o-transform:      rotate(-35deg);
+
+    }
+    .star-five:after {
+       position: absolute;
+       display: block;
+       color: #C0392B;
+       top: 3px;
+       left: -105px;
+       width: 0px;
+       height: 0px;
+       border-right: 100px solid transparent;
+       border-bottom: 70px solid #C0392B;
+       border-left: 100px solid transparent;
+       -webkit-transform: rotate(-70deg);
+       -moz-transform:    rotate(-70deg);
+       -ms-transform:     rotate(-70deg);
+       -o-transform:      rotate(-70deg);
+       content: '';
+    }
+  </style>
+</head>
+<body>
+<div class="number">
+  <div class="star-five"></div>
+</div>
+  <blockquote class="uppercase">
+    Perhaps one day, tired of circling the world, I&rsquo;ll return to Argentina and settle in the Andean lakes, if not indefinitely then at least for a pause while I shift from one understanding of the world to another.
+  <cite>&#8212;<br />Che Guevara</cite>
+  </blockquote>
+</body>
+</html>
